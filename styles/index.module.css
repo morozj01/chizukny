@@ -1,0 +1,46 @@
+.hero-image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10%;
+  bottom: 0;
+  margin: auto;
+  z-index: 0;
+  width:100%;
+  height: 90%;
+  border-radius:10px;
+  opacity:.5;
+}
+
+
+
+.hero-button {
+  background-color: white;
+  color: #7699d6;
+  font-size: 28px;
+  border: 1px solid white;
+  border-radius:30px;
+  font-weight:500;
+  -webkit-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
+}
+
+.hero-button:hover {
+  background-color: #7699d6;
+  color: white;
+  -webkit-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
+}
+
+.expanding-container {
+  border-top:3px solid white;
+  border-bottom:3px solid white;
+}
+
+.expanding-icon {
+  color:white;
+}
+
+.expanding-icon:hover {
+  cursor:pointer;
+}
