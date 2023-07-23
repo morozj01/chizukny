@@ -12,8 +12,6 @@
   opacity:.5;
 }
 
-
-
 .hero-button {
   background-color: white;
   color: #7699d6;
@@ -43,4 +41,41 @@
 
 .expanding-icon:hover {
   cursor:pointer;
+}
+
+.nav-item {
+  display: inline-block;
+  position: relative;
+  font-size: calc(16px + .05vw);
+  margin: 0px 5px 0px 5px;
+  z-index: 10;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  color:white !important;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+}
+
+.nav-item:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  background-color: white;
+}
+
+.nav-item:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nav-seperator {
+  color:white;
 }
