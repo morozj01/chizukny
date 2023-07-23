@@ -1,15 +1,8 @@
 import type { NextPage } from 'next';
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Collapse from 'react-bootstrap/Collapse';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import { motion } from 'framer-motion';
 import {
-  CaretUpFill,
-  Chat,
-  Clock,
-  Geo,
   List,
   XCircleFill,
 } from 'react-bootstrap-icons';
