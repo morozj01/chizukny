@@ -12,6 +12,7 @@ import {
 } from 'react-bootstrap-icons';
 import { useState } from 'react';
 import style from '../styles/index.module.css';
+import NavBar from '../components/navbar';
 
 const Home: NextPage = () => {
   const [collapseOneOpen, setCollapseOneOpen] = useState(true);
@@ -66,15 +67,8 @@ const Home: NextPage = () => {
 
   return (
     <Container fluid>
-      <Row fluid style={{ minHeight: '10vh', backgroundColor: '#7699d6' }}>
-        <Col className="d-flex flex-column flex-md-row align-items-center justify-content-center p-3">
-          <img src="/images/star.png" style={{ height: '40px' }} alt="star" className="me-0 me-md-3" />
-          <span className="text-center" style={{ color: 'white', fontSize: '32px', fontWeight: '400' }}>
-            Chizuk Hatorah Worldwide
-          </span>
-        </Col>
-      </Row>
-      <Row fluid style={{ height: '90vh', backgroundColor: '#7699d6' }} className={`${style['hero-section']}`}>
+      <NavBar />
+      <Row fluid style={{ height: '89vh', backgroundColor: '#7699d6' }} className={`${style['hero-section']}`}>
         <Col md={{ offset: 3, span: 6 }} className="d-flex align-items-center justify-content-center p-3 mb-4 px-4 px-md-3">
           <div className="text-center mb-3">
             <motion.div
@@ -118,7 +112,13 @@ const Home: NextPage = () => {
         </Col>
       </Row>
 
-      <Row fluid style={{ minHeight: '85vh', backgroundColor: '#7699d6', borderTop: '1px solid white' }} id="about-us">
+      <Row fluid>
+        <Col className="px-0 mx-0 py-4" style={{ backgroundColor: '#e0e0db' }}>
+          <img style={{ width: '100%' }} src="/images/hero-image.png" className="my-1" alt="communities" />
+        </Col>
+      </Row>
+
+      <Row fluid style={{ minHeight: '85vh', backgroundColor: '#7699d6' }} id="about-us">
         <Col md={{ offset: 2, span: 8 }} className="d-flex align-items-center justify-content-center py-5 px-4 px-md-0">
           <div className="w-100">
             <motion.div
@@ -288,7 +288,7 @@ const Home: NextPage = () => {
         </Col>
       </Row>
 
-      <Row fluid style={{ minHeight: '20vh', backgroundColor: '#e0e0db' }}>
+      <Row fluid style={{ minHeight: '20vh', backgroundColor: '#e0e0db' }} className="pt-2">
         <Col lg={4} className="d-flex align-items-center justify-content-center py-5">
           <div className="text-center">
             <p style={{ color: '#7699d6', fontSize: '26px', fontWeight: '400' }} className="mt-1">
